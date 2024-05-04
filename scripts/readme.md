@@ -4,26 +4,15 @@
 Performed in R v.4.1.3 [R Core Team](https://www.r-project.org)
 
 #### Color code
-- Site
-  - ![#1d5b65](https://placehold.co/15x15/1d5b65/1d5b65.png) `#1d5b65` (Silty)
-  - ![#a34828](https://placehold.co/15x15/a34828/a34828.png) `#a34828` (Sandy)
-- Climate
-  - ![#f8b195](https://placehold.co/15x15/f8b195/f8b195.png) `#f8b195` (Dry)
-  - ![#a8e6c3](https://placehold.co/15x15/a8e6c3/a8e6c3.png) `#a8e6c3` (Wet)
+- Depth
+  - ![#70411c](https://placehold.co/15x15/70411c/70411c.png) `#70411c` (D30)
+  - ![#ba997b](https://placehold.co/15x15/ba997b/ba997b.png) `#ba997b` (D60)
 - Microhabitats
-  - ![#b05644](https://placehold.co/15x15/b05644/b05644.png) `#b05644` (BS)
   - ![#d9b967](https://placehold.co/15x15/d9b967/d9b967.png) `#d9b967` (RH)
   - ![#57896A](https://placehold.co/15x15/57896A/57896A.png) `#57896A` (RP)
 - Rotations
   - ![#e7e5cc](https://placehold.co/15x15/e7e5cc/e7e5cc.png) `#e7e5cc` (W1)
   - ![#9cc184](https://placehold.co/15x15/9cc184/9cc184.png) `#9cc184` (W2)
-  - ![#447243](https://placehold.co/15x15/447243/447243.png) `#447243` (W3)
-  - ![#1e3d14](https://placehold.co/15x15/1e3d14/1e3d14.png) `#1e3d14` (WM)
-- Phylum
-  - ![#628dbd](https://placehold.co/15x15/1e3d14/1e3d14.png) `#1e3d14` (Actinobacteriota)
-  - ![#a8e6c3](https://placehold.co/15x15/a8e6c3/a8e6c3.png) `#a8e6c3` (Bacteroidota)
-  - ![#f8b195](https://placehold.co/15x15/f8b195/f8b195.png) `#f8b195` (Patescibacteriota)
-  - ![#80c698](https://placehold.co/15x15/80c698/80c698.png) `#80c698` (Proteobacteria)
 
 ### Packages
 library("dada2")\
