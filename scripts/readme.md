@@ -150,6 +150,13 @@ Column clustered by Depth, Microhabitat and Rotation. T1 and T2.
 ### 9. DESeq2
 Based on the rarefied data, this script performs differential abundance (DA) between two groups.
 
+Comparisons (*p* adjusted)
+  - T1
+      - W1 vs W2 (16 DA taxa) &#8594; (Bacteroidota, Firmicutes, Patescibacteria, Protebacteria, Verrucomicrobiota)
+  - T2
+      - W1 vs W2 (17 DA taxa) &#8594; (Bacteroidota, Firmicutes, Patescibacteria, Protebacteria, Verrucomicrobiota)
+
+
 ### References
 Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Met. 13:581–583. [DOI](http://10.1101/024034)
 
