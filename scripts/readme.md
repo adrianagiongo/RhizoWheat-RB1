@@ -147,7 +147,7 @@ Heatmaps based on the Top10 taxa (Annotation) based on the rarefied data. Relati
 Pheatmaps of the Top10 taxa (Annotation) based on the rarefied data. Relative abundance (hellinger).\
 Column clustered by Depth, Microhabitat and Rotation. T1 and T2.
 
-### 9. DESeq2
+### 11. DESeq2
 Based on the rarefied data, this script performs differential abundance (DA) between two groups.
 
 Comparisons (*p* adjusted)
@@ -156,6 +156,8 @@ Comparisons (*p* adjusted)
   - T2
       - W1 vs W2 (17 DA taxa) &#8594; (Bacteroidota, Firmicutes, Patescibacteria, Protebacteria, Verrucomicrobiota)
 
+### 12. Bubble plot (DESeq2 results)
+Ggplot2 based on the DESeq2 results.
 
 ### References
 Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Met. 13:581–583. [DOI](http://10.1101/024034)
