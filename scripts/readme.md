@@ -89,32 +89,63 @@ No significantly differences in Shannon, Chao1 and Pielou (Wilcoxon test)
 ### 8. Ordination 
 This script creates MDS plots and calculates PERMANOVA and ANOSIM based on the rarefied data. Square root was applied (*hellinger*).\
 
+#### PERMANOVA
 
+| PERMANOVA All               | Df | SumOfSqs | R2     | F      | Pr(>F) |
+| --------------------------- | -- | -------- | ------ | ------ | ------ |
+| Rotation                    | 1  | 0.1855   | 0.0531 | 2.242  | 0.0001 |
+| Depth                       | 1  | 0.2735   | 0.0784 | 3.3057 | 0.0001 |
+| Microhabitat                | 1  | 0.1612   | 0.0462 | 1.9482 | 0.0004 |
+| Stage                       | 1  | 0.236    | 0.0676 | 2.8529 | 0.0001 |
+| Rotation:Depth              | 1  | 0.1039   | 0.0298 | 1.2558 | 0.0765 |
+| Rotation:Microhabitat       | 1  | 0.0854   | 0.0245 | 1.0323 | 0.3515 |
+| Depth:Microhabitat          | 1  | 0.0967   | 0.0277 | 1.1682 | 0.142  |
+| Rotation:Stage              | 1  | 0.1064   | 0.0305 | 1.2863 | 0.0603 |
+| Depth:Stage                 | 1  | 0.1044   | 0.0299 | 1.2613 | 0.0709 |
+| Rotation:Depth:Microhabitat | 1  | 0.0741   | 0.0212 | 0.895  | 0.7196 |
+| Rotation:Depth:Stage        | 1  | 0.078    | 0.0224 | 0.9432 | 0.582  |
+| Residual                    | 24 | 1.9858   | 0.5688 | NA     | NA     |
+| Total                       | 35 | 3.4909   | 1      | NA     | NA     |
 
+| PERMANOVA T1                | Df | SumOfSqs | R2     | F      | Pr(>F) |
+| --------------------------- | -- | -------- | ------ | ------ | ------ |
+| Microhabitat                | 1  | 0.1172   | 0.0523 | 1.3327 | 0.0344 |
+| Rotation                    | 1  | 0.1593   | 0.0712 | 1.8122 | 0.0006 |
+| Depth                       | 1  | 0.2223   | 0.0993 | 2.5284 | 0.0001 |
+| Microhabitat:Rotation       | 1  | 0.0711   | 0.0317 | 0.8084 | 0.9252 |
+| Microhabitat:Depth          | 1  | 0.0915   | 0.0409 | 1.0410 | 0.3433 |
+| Rotation:Depth              | 1  | 0.1002   | 0.0447 | 1.1391 | 0.1666 |
+| Microhabitat:Rotation:Depth | 1  | 0.0708   | 0.0316 | 0.8048 | 0.9308 |
+| Residual                    | 16 | 1.4067   | 0.6283 | NA     | NA     |
+| Total                       | 23 | 2.2390   | 1.0000 | NA     | NA     |
 
+| PERMANOVA T2   | Df | SumOfSqs | R2     | F      | Pr(>F) |
+| -------------- | -- | -------- | -------| ------ | -------|
+| Rotation       | 1  | 0.1469   | 0.1512 | 2.0302 | 0.0005 |
+| Depth          | 1  | 0.1607   | 0.1654 | 2.2203 | 0.0001 |
+| Rotation:Depth | 1  | 0.0851   | 0.0875 | 1.1755 | 0.1751 |
+| Residual       | 8  | 0.5790   | 0.5959 | NA     | NA     |
+| Total          | 11 | 0.9718   | 1      | NA     | NA     |
 
-| PERMANOVA All   | Df  | SumOfSqs | R2      | F      | Pr(>F)  |
-| --------------- |:---:| --------:| -------:| ------ | ------- |
-| Rotation        | 3   | 0.8443   | 0.15947 | 1.8312 | 0.03110 |
-| Depth           | 1   | 0.4626   | 0.08739 | 3.0105 | 0.01550 |
-| Stage           | 3   | 0.7600   | 0.14355 | 1.6484 | 0.05509 |
-| Microhabitat    | 3   | 0.7600   | 0.14355 | 1.6484 | 0.05509 |
-| Microhabitat    | 3   | 0.7600   | 0.14355 | 1.6484 | 0.05509 |
-| Microhabitat    | 3   | 0.7600   | 0.14355 | 1.6484 | 0.05509 |
-| Residual        | 21  | 3.2272   | 0.60959 |        |         |
-| Total           | 29  | 5.2941   | 1.00000 |        |         |
+#### anosim
+Permutation: free
+Number of permutations: 10000
 
-| PERMANOVA T1    | Df  | SumOfSqs | R2      | F      | Pr(>F)  |
-| --------------- |:---:| --------:| -------:| ------ | ------- |
-| Treatment       | 3   | 0.30482  | 0.24697 | 0.9839 | 0.6315  |
-| Residual        | 9   | 0.92942  | 0.75303 |        |         |
-| Total           | 12  | 1.23424  | 1.00000 |        |         |
+All: ANOSIM statistic R: 0.3859 
+- Significance: 9.999e-05 
 
-| PERMANOVA T2    | Df  | SumOfSqs | R2      | F      | Pr(>F)  |
-| --------------- |:---:| --------:| -------:| ------ | ------- |
-| Treatment       | 3   | 1.3195   | 0.36478 | 2.297  | 0.0126  |
-| Residual        | 12  | 2.2978   | 0.63522 |        |         |
-| Total           | 15  | 3.6173   | 1.00000 |        |         |
+T1: ANOSIM statistic R: 0.1135 
+- Significance: 0.030997 
+
+T2: ANOSIM statistic R: 0.4426 
+- Significance: 0.0083992 
+
+### 9. Heatmap
+Heatmaps based on the Top10 taxa (Annotation) based on the rarefied data. Relative abundance or square root (hellinger).
+
+### 10. Pheatmap
+Pheatmaps of the Top10 taxa (Annotation) based on the rarefied data. Relative abundance (hellinger).\
+Column clustered by Depth, Microhabitat and Rotation. T1 and T2.
 
 ### 9. DESeq2
 Based on the rarefied data, this script performs differential abundance (DA) between two groups.
