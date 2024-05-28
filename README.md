@@ -1,5 +1,5 @@
 ### Github repository for 
-# RhizoBox 01
+# RhizoBox 01 (jki_seq5)
 ### Nikolaos Kaloterakis, Andrea Braun-Kiewnick, Adriana Giongo, Kornelia Smalla, Nicolas Brüggemann
 
 ### How to cite this work
