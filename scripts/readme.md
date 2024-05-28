@@ -198,11 +198,6 @@ Comparisons (*p* adjusted)
 ### 12. Bubble plot (DESeq2 results)
 Ggplot2 based on the DESeq2 results.
 
-References
-Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Met. 13:581–583. DOI
-
-Schloss PD (2024) Rarefaction is currently the best approach to control for uneven sequencing effort in amplicon sequence analyses. mSphere 9:e00354-23. DOI
-
 ### References
 Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Met. 13:581–583. [DOI](http://10.1101/024034)
 
