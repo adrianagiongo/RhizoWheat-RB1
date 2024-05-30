@@ -128,7 +128,8 @@ D30 and D60
 ### 7. Alpha diversity
 This script calculates alpha diversity based on the rarefied data.
 
-No significantly differences in Shannon, Chao1 and Pielou (Wilcoxon test)
+No significantly differences in Shannon, Chao1 and Pielou (Wilcoxon test) in W1 vs W2 in T1 or T2.
+
 
 ### 8. Ordination 
 This script creates MDS plots and calculates PERMANOVA and ANOSIM based on the rarefied data. Square root was applied (*hellinger*).\
