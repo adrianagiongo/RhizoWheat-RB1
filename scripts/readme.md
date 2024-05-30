@@ -117,13 +117,15 @@ All
   - Phyla = 47 / Annotations = 1326\
 
 Samples were grouped by:
-T1 and T2
+Stage (T1 and T2)
   - T1 = 11960 ASVs / 24 samples / 1202 Annotations
   - T2 = 7973 ASVs / 12 samples / 980 Annotations
 
-D30 and D60
-  - D30 = 9624 ASVs / 18 samples / 1044 Annotations
-  - D60 = 10480 ASVs / 18 samples / 1133 Annotations
+Stage (T1 and T2) and Depth (D30 and D60)
+  - T1_D30 = 7738 ASVs / 12 samples / 949 Annotations
+  - T2_D30 = 4973 ASVs / 6 samples / 755 Annotations
+  - T1_D60 = 7981 ASVs / 12 samples / 999 Annotations
+  - T2_D60 = 5525 ASVs / 6 samples / 807 Annotations
     
 ### 7. Alpha diversity
 This script calculates alpha diversity based on the rarefied data.
@@ -197,9 +199,20 @@ Based on the rarefied data, this script performs differential abundance (DA) bet
 
 Comparisons (*p* adjusted)
   - T1
-      - W1 vs W2 (16 DA taxa) &#8594; (Bacteroidota, Firmicutes, Patescibacteria, Protebacteria, Verrucomicrobiota)
+      - W1 vs W2 (16 DA taxa) &#8594; (Bacteroidota, Firmicutes, Patescibacteria, Proteobacteria, Verrucomicrobiota)
   - T2
-      - W1 vs W2 (17 DA taxa) &#8594; (Bacteroidota, Firmicutes, Patescibacteria, Protebacteria, Verrucomicrobiota)
+      - W1 vs W2 (17 DA taxa) &#8594; (Bacteroidota, Firmicutes, Patescibacteria, Proteobacteria, Verrucomicrobiota)
+   
+  - T1_D30
+      - W1 vs W2 (12 DA taxa) &#8594; (Actinobacteriota, Firmicutes, Patescibacteria, Proteobacteria)
+  - T2_D30
+      - W1 vs W2 (5 DA taxa) &#8594; (Acidobacteriota, Proteobacteria)
+   
+  - T1_D60
+      - W1 vs W2 (16 DA taxa) &#8594; (Acidobacteriota, Bacteroidota, Chloroflexi, Firmicutes, Cyanobacteria, Myxococcota, Patescibacteria, Proteobacteria, Verrucomicrobiota)
+  - T2_D60
+      - W1 vs W2 (5 DA taxa) &#8594; (Acidobacteriota, Proteobacteria)
+  
 
 ### 12. Bubble plot (DESeq2 results)
 Ggplot2 based on the DESeq2 results.
