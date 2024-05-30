@@ -113,13 +113,18 @@ Final = 15862 ASVs and 34391 sequences
 ### 6. Data selection
 Based on the rarefied data, this script group taxa by desired rank, selects a group of samples to be analyzed separately and filter them to remover zeros.
 
-Phyla = 47\
-Annotation = 1326\
-Besides 'all', samples were grouped by T1 and T2
+All
+  - Phyla = 47 / Annotations = 1326\
 
-T1 = 11960 ASVs / 24 samples\
-T2 = 7973 ASVs / 12 samples
+Samples were grouped by:
+T1 and T2
+  - T1 = 11960 ASVs / 24 samples / 1202 Annotations
+  - T2 = 7973 ASVs / 12 samples / 980 Annotations
 
+D30 and D60
+  - D30 = 9624 ASVs / 18 samples / 1044 Annotations
+  - D60 = 10480 ASVs / 18 samples / 1133 Annotations
+    
 ### 7. Alpha diversity
 This script calculates alpha diversity based on the rarefied data.
 
