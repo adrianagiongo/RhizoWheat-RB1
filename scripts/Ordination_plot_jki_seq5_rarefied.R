@@ -7,8 +7,6 @@ library("dplyr")
 library("microbiome")
 library("ggpubr")
 
-
-
 ################################   All samples    ---------> ASV  (Figure 1B)
 #set seed
 set.seed(2022)
