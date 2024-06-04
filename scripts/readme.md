@@ -130,7 +130,7 @@ Stage (T1 and T2) and Depth (D30 and D60)
 ### 7. Alpha diversity
 This script calculates alpha diversity based on the rarefied data.
 
-No significantly differences in Shannon, Chao1 and Pielou (Wilcoxon test) in W1 vs W2 in T1 or T2.
+No significant differences in Shannon, Chao1, and Pielou (Wilcoxon test) in W1 vs W2 in T1 or T2.
 
 
 ### 8. Ordination 
@@ -188,10 +188,10 @@ T2: ANOSIM statistic R: 0.4426
 - Significance: 0.0083992 
 
 ### 9. Heatmap
-Heatmaps based on the Top10 taxa (Annotation) based on the rarefied data. Relative abundance or square root (hellinger).
+Heatmaps based on the Top10 taxa (Annotation) based on the rarefied data. Relative abundance or square root (*hellinger*).
 
 ### 10. Pheatmap
-Pheatmaps of the Top10 taxa (Annotation) based on the rarefied data. Relative abundance (hellinger).\
+Pheatmaps of the Top10 taxa (Annotation) based on the rarefied data. Relative abundance (*hellinger*).\
 Column clustered by Depth, Microhabitat and Rotation. T1 and T2.
 
 ### 11. DESeq2
@@ -213,9 +213,11 @@ Comparisons (*p* adjusted)
   - T2_D60
       - W1 vs W2 (5 DA taxa) &#8594; (Acidobacteriota, Proteobacteria)
   
-
 ### 12. Bubble plot (DESeq2 results)
 Ggplot2 based on the DESeq2 results.
+
+### 13. ASVs to FASTA (DESeq2 results)
+Based on the DESeq2 results, we selected the ASVs from each group (T1 D30, T1 D60, T2 D30, T2 D60) using this script. After, we ran the fasta containing the ASVs against whole genomes.
 
 ### References
 Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Met. 13:581–583. [DOI](http://10.1101/024034)
