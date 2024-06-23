@@ -30,7 +30,8 @@ save_selected_asvs_to_fasta <- function(sequences, selected_names, output_file) 
       # Write to fasta file
       writeXStringSet(dna_string_set, filepath=output_file)
     }
-    
+
+
 ######Specify the path to sequence file
 csv_file <- "~/Documents/R_analysis/jki_seq5/data_jki_seq5/jki_seq5_seqs.csv"   # Path to your CSV file
     
