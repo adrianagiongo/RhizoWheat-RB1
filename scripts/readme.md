@@ -102,8 +102,6 @@ This script removes unwanted taxonomic groups from the dataset.
 - Chloroplasts (Order) (47 ASVs removed)
 - Mitochondria (Family) (21 ASVs removed)
 
-Total of samples = 36 (18174 ASVs)
-
 ### 5. Rarefaction
 This script performs rarefaction based on the minimum sequences. See Schloss (2024).
 
