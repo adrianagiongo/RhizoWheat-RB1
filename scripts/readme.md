@@ -39,7 +39,7 @@ Database used: [SILVA 138 SSU](https://www.arb-silva.de/documentation/release-13
 out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, compress = TRUE, truncQ = 2, trimLeft=c(19,20), minLen = 100, maxN=0, maxEE=c(2,2), rm.phix=TRUE, matchIDs = TRUE, multithread=TRUE)
 ```
 Total of samples = 36\
-Total of reads (nonchim) = 1,668,656
+Total of reads (nonchim) = 1,668,657
 
 |     | input  | filtered | denoisedF | denoisedR | merged | nonchim |
 | --- | ------ | -------- | --------- | --------- | ------ | ------- |
