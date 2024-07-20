@@ -144,11 +144,11 @@ This script creates MDS plots and calculates PERMANOVA and ANOSIM based on the r
 | Stage                       | 1  | 0.236    | 0.0676 | 2.8529 | 0.0001 |
 | Rotation:Depth              | 1  | 0.1039   | 0.0298 | 1.2558 | 0.0765 |
 | Rotation:Microhabitat       | 1  | 0.0854   | 0.0245 | 1.0323 | 0.3515 |
-| Depth:Microhabitat          | 1  | 0.0967   | 0.0277 | 1.1682 | 0.142  |
+| Depth:Microhabitat          | 1  | 0.0967   | 0.0277 | 1.1682 | 0.1420 |
 | Rotation:Stage              | 1  | 0.1064   | 0.0305 | 1.2863 | 0.0603 |
 | Depth:Stage                 | 1  | 0.1044   | 0.0299 | 1.2613 | 0.0709 |
 | Rotation:Depth:Microhabitat | 1  | 0.0741   | 0.0212 | 0.895  | 0.7196 |
-| Rotation:Depth:Stage        | 1  | 0.078    | 0.0224 | 0.9432 | 0.582  |
+| Rotation:Depth:Stage        | 1  | 0.078    | 0.0224 | 0.9432 | 0.5820 |
 | Residual                    | 24 | 1.9858   | 0.5688 | NA     | NA     |
 | Total                       | 35 | 3.4909   | 1      | NA     | NA     |
 
