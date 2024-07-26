@@ -91,8 +91,8 @@ if (length(missing_asv_names) > 0) {
   warning("The following ASV names were not found in the sequences: ", paste(missing_asv_names, collapse = ", "))
 }
 
-# Specify the output fasta file name
-output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/T1_D30_filt_deseq2.fasta"
+# Specify the output fasta file name 
+output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/FASTA_jki_seq5/T1_D30_filt_deseq2.fasta"
 
 # Save the selected sequences to a fasta file
 save_selected_asvs_to_fasta(sequences, existing_asv_names, output_fasta_file)
@@ -135,7 +135,7 @@ if (length(missing_asv_names) > 0) {
 }
 
 # Specify the output fasta file name
-output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/T1_D60_filt_deseq2.fasta"
+output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/FASTA_jki_seq5/T1_D60_filt_deseq2.fasta"
 
 # Save the selected sequences to a fasta file
 save_selected_asvs_to_fasta(sequences, existing_asv_names, output_fasta_file)
@@ -179,7 +179,7 @@ if (length(missing_asv_names) > 0) {
 }
 
 # Specify the output fasta file name
-output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/T2_D30_filt_deseq2.fasta"
+output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/FASTA_jki_seq5/T2_D30_filt_deseq2.fasta"
 
 # Save the selected sequences to a fasta file
 save_selected_asvs_to_fasta(sequences, existing_asv_names, output_fasta_file)
@@ -222,7 +222,7 @@ if (length(missing_asv_names) > 0) {
 }
 
 # Specify the output fasta file name
-output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/T2_D60_filt_deseq2.fasta"
+output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/FASTA_jki_seq5/T2_D60_filt_deseq2.fasta"
 
 # Save the selected sequences to a fasta file
 save_selected_asvs_to_fasta(sequences, existing_asv_names, output_fasta_file)

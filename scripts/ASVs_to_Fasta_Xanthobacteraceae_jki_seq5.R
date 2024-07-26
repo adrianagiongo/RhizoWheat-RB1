@@ -92,7 +92,7 @@ if (length(missing_asv_names) > 0) {
 }
 
 # Specify the output fasta file name
-output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/.fasta"
+output_fasta_file <- "~/Documents/R_analysis/jki_seq5/output_jki_seq5/FASTA_jki_seq5/Xanthobacteraceae.fasta"
 
 # Save the selected sequences to a fasta file
 save_selected_asvs_to_fasta(sequences, existing_asv_names, output_fasta_file)
