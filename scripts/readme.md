@@ -225,6 +225,9 @@ Tax4Fun2 was performed two times:
 - whole dataset
 - only results from DESeq2
 
+### 16. ASVs to FASTA (for Xanthobacteraceae)
+Xanthobacteraceae is an interesting family that appeared in DESeq2. Sequences from 46 ASVs belonging to this family were extracted using the script ASVs_Fasta_Xanthobacteraceae_jki_seq5.R and used to construct a phylogenetic tree.
+
 ### References
 Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Met. 13:581–583. [DOI](http://10.1101/024034)
 
