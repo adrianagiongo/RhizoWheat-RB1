@@ -218,8 +218,12 @@ Ggplot2 based on the DESeq2 results.
 Based on the DESeq2 results, we selected the ASVs from each group (T1 D30, T1 D60, T2 D30, T2 D60) using this script. After, we ran the fasta containing the ASVs against whole genomes.
 
 ### 14. ASVs to FASTA (for Tax4Fun2)
+This script selects sequences from jki_seq5_seqs.cvs based on a list of ASVs. 
 
 ### 15. Tax4Fun2
+Tax4Fun2 was performed two times:
+- whole dataset
+- only results from DESeq2
 
 ### References
 Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample inference from Illumina amplicon data. Nat. Met. 13:581–583. [DOI](http://10.1101/024034)
