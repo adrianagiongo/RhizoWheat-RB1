@@ -8,8 +8,8 @@ Performed in R v.4.1.3 [R Core Team](https://www.r-project.org)
   - ![#70411c](https://placehold.co/15x15/70411c/70411c.png) `#70411c` (D30)
   - ![#ba997b](https://placehold.co/15x15/ba997b/ba997b.png) `#ba997b` (D60)
 - Microhabitats
-  - ![#d9b967](https://placehold.co/15x15/d9b967/d9b967.png) `#d9b967` (RH)
-  - ![#57896A](https://placehold.co/15x15/57896A/57896A.png) `#57896A` (RP)
+  - ![#d9b967](https://placehold.co/15x15/d9b967/d9b967.png) `#d9b967` (RA)
+  - ![#57896A](https://placehold.co/15x15/57896A/57896A.png) `#57896A` (RHRP)
 - Rotations
   - ![#d7d3a9](https://placehold.co/15x15/d7d3a9/d7d3a9.png) `#d7d3a9` (W1)
   - ![#74a553](https://placehold.co/15x15/74a553/74a553.png) `#74a553` (W2)
