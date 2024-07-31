@@ -11,8 +11,8 @@ Performed in R v.4.1.3 [R Core Team](https://www.r-project.org)
   - ![#d9b967](https://placehold.co/15x15/d9b967/d9b967.png) `#d9b967` (RA)
   - ![#57896A](https://placehold.co/15x15/57896A/57896A.png) `#57896A` (RHRP)
 - Rotations
-  - ![#d7d3a9](https://placehold.co/15x15/d7d3a9/d7d3a9.png) `#d7d3a9` (W1)
-  - ![#74a553](https://placehold.co/15x15/74a553/74a553.png) `#74a553` (W2)
+  - ![#008040](https://placehold.co/15x15/008040/008040.png) `#008040` (W1)
+  - ![#ee4035](https://placehold.co/15x15/ee4035/ee4035.png) `#ee4035` (W2)
 
 ### Packages
 library("dada2")\
