@@ -19,4 +19,8 @@ https://
 This work was conducted within the RhizoWheat Project (www.rhizowheat.uni-kiel.de), project number 031B0910D (Julius Kühn Institute), and 031B0910B (Forschungszentrum Jülich), funded by the Federal Ministry of Education and Research (BMBF) under the Funding Program “Rhizo4Bio - Importance of the Rhizosphere for the Bioeconomy”. AG was funded through the 2018-2019 BiodivERsA3 ERA-Net COFUND program and with the funding organization DFG (SM 59/21-1).
 
 ### More info
+https://www.rhizowheat.uni-kiel.de/de \
+https://www.julius-kuehn.de/en/ep
 
+### Submission
+Submitted to [xx](https://xx) on xx.xx.2024. 
