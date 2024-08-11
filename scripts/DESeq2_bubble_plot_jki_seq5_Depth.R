@@ -14,7 +14,7 @@ bubble_sigtab_T1_D30
 bubble_sigtab_T1_D30_melt <- melt(bubble_sigtab_T1_D30, id = c("Sample", "Rotation"))
 bubble_sigtab_T1_D30_melt
 
-colours = c("#d7d3a9", "#74a553")
+colours = c("#008040", "#ee4035")
 
 bubble_sigtab_T1_D30_melt$Sample <- factor(bubble_sigtab_T1_D30_melt$Sample,levels=unique(bubble_sigtab_T1_D30_melt$Sample))
 
@@ -49,7 +49,7 @@ bubble_sigtab_T2_D30
 bubble_sigtab_T2_D30_melt <- melt(bubble_sigtab_T2_D30, id = c("Sample", "Rotation"))
 bubble_sigtab_T2_D30_melt
 
-colours = c("#d7d3a9", "#74a553")
+colours = c("#008040", "#ee4035")
 
 bubble_sigtab_T2_D30_melt$Sample <- factor(bubble_sigtab_T2_D30_melt$Sample,levels=unique(bubble_sigtab_T2_D30_melt$Sample))
 
@@ -84,7 +84,7 @@ bubble_sigtab_T1_D60
 bubble_sigtab_T1_D60_melt <- melt(bubble_sigtab_T1_D60, id = c("Sample", "Rotation"))
 bubble_sigtab_T1_D60_melt
 
-colours = c("#d7d3a9", "#74a553")
+colours = c("#008040", "#ee4035")
 
 bubble_sigtab_T1_D60_melt$Sample <- factor(bubble_sigtab_T1_D60_melt$Sample,levels=unique(bubble_sigtab_T1_D60_melt$Sample))
 
@@ -118,7 +118,7 @@ bubble_sigtab_T2_D60
 bubble_sigtab_T2_D60_melt <- melt(bubble_sigtab_T2_D60, id = c("Sample", "Rotation"))
 bubble_sigtab_T2_D60_melt
 
-colours = c("#d7d3a9", "#74a553")
+colours = c("#008040", "#ee4035")
 
 bubble_sigtab_T2_D60_melt$Sample <- factor(bubble_sigtab_T2_D60_melt$Sample,levels=unique(bubble_sigtab_T2_D60_melt$Sample))
 

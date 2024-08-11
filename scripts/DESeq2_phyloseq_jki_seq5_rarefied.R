@@ -97,17 +97,23 @@ summary(res_T1_D30)
 #for Phyloseq plot and tables
 ##############################
 #Indicate alpha and adjust values
-
-#rotW1W2
 alpha_DESeq2 = 0.05
 
 sigtab_T1_D30 = res_T1_D30[which(res_T1_D30$padj < alpha_DESeq2), ]
 
+## Relative abundance
 sigtab_T1_D30 = cbind(as(sigtab_T1_D30, "data.frame"), as(tax_table(psO_jki_seq5_rarefied_T1_D30_filt_annotation)[rownames(sigtab_T1_D30), ], "matrix"), as(otu_table(psO_jki_seq5_rarefied_T1_D30_filt_annotation_rel)[rownames(sigtab_T1_D30), ], "matrix"))
 head(sigtab_T1_D30)
 dim(sigtab_T1_D30)
 
 write.csv(sigtab_T1_D30, "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/sigtab_T1_D30.csv")
+
+## Absolute abundance
+sigtab_T1_D30_abs = cbind(as(sigtab_T1_D30, "data.frame"), as(tax_table(psO_jki_seq5_rarefied_T1_D30_filt_annotation)[rownames(sigtab_T1_D30), ], "matrix"), as(otu_table(psO_jki_seq5_rarefied_T1_D30_filt_annotation)[rownames(sigtab_T1_D30), ], "matrix"))
+head(sigtab_T1_D30_abs)
+dim(sigtab_T1_D30_abs)
+
+write.csv(sigtab_T1_D30_abs, "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/sigtab_T1_D30_abs.csv")
 
 
 ### T2_D30
@@ -131,8 +137,6 @@ summary(res_T2_D30)
 #for Phyloseq plot and tables
 ##############################
 #Indicate alpha and adjust values
-
-#rotW1W2
 alpha_DESeq2 = 0.05
 
 sigtab_T2_D30 = res_T2_D30[which(res_T2_D30$padj < alpha_DESeq2), ]
@@ -143,6 +147,12 @@ dim(sigtab_T2_D30)
 
 write.csv(sigtab_T2_D30, "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/sigtab_T2_D30.csv")
 
+## Absolute abundance
+sigtab_T2_D30_abs = cbind(as(sigtab_T2_D30, "data.frame"), as(tax_table(psO_jki_seq5_rarefied_T2_D30_filt_annotation)[rownames(sigtab_T2_D30), ], "matrix"), as(otu_table(psO_jki_seq5_rarefied_T2_D30_filt_annotation)[rownames(sigtab_T2_D30), ], "matrix"))
+head(sigtab_T2_D30_abs)
+dim(sigtab_T2_D30_abs)
+
+write.csv(sigtab_T2_D30_abs, "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/sigtab_T2_D30_abs.csv")
 
 
 ###################
@@ -168,8 +178,6 @@ summary(res_T1_D60)
 #for Phyloseq plot and tables
 ##############################
 #Indicate alpha and adjust values
-
-#rotW1W2
 alpha_DESeq2 = 0.05
 
 sigtab_T1_D60 = res_T1_D60[which(res_T1_D60$padj < alpha_DESeq2), ]
@@ -180,6 +188,12 @@ dim(sigtab_T1_D60)
 
 write.csv(sigtab_T1_D60, "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/sigtab_T1_D60.csv")
 
+## Absolute abundance
+sigtab_T1_D60_abs = cbind(as(sigtab_T1_D60, "data.frame"), as(tax_table(psO_jki_seq5_rarefied_T1_D60_filt_annotation)[rownames(sigtab_T1_D60), ], "matrix"), as(otu_table(psO_jki_seq5_rarefied_T1_D60_filt_annotation)[rownames(sigtab_T1_D60), ], "matrix"))
+head(sigtab_T1_D60_abs)
+dim(sigtab_T1_D60_abs)
+
+write.csv(sigtab_T1_D60_abs, "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/sigtab_T1_D60_abs.csv")
 
 ### T2_D60
 ##Differential analysis
@@ -203,7 +217,6 @@ summary(res_T2_D60)
 ##############################
 #Indicate alpha and adjust values
 
-#rotW1W2
 alpha_DESeq2 = 0.05
 
 sigtab_T2_D60 = res_T2_D60[which(res_T2_D60$padj < alpha_DESeq2), ]
@@ -213,6 +226,13 @@ head(sigtab_T2_D60)
 dim(sigtab_T2_D60)
 
 write.csv(sigtab_T2_D60, "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/sigtab_T2_D60.csv")
+
+## Absolute abundance
+sigtab_T2_D60_abs = cbind(as(sigtab_T2_D60, "data.frame"), as(tax_table(psO_jki_seq5_rarefied_T2_D60_filt_annotation)[rownames(sigtab_T2_D60), ], "matrix"), as(otu_table(psO_jki_seq5_rarefied_T2_D60_filt_annotation)[rownames(sigtab_T2_D60), ], "matrix"))
+head(sigtab_T2_D60_abs)
+dim(sigtab_T2_D60_abs)
+
+write.csv(sigtab_T2_D60_abs, "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Tables_jki_seq5/sigtab_T2_D60_abs.csv")
 
 ##The end!
 

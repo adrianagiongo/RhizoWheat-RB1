@@ -38,7 +38,7 @@ system.time(rarecurve(mat_psO_jki_seq5_rarefied, step = 1000, lwd=2, ylab="OTU",
 #Prepare file with meta data using meta function
 psO_jki_seq5_rarefied_rare.meta <- meta(psO_jki_seq5_rarefied)
 head(psO_jki_seq5_rarefied_rare.meta)
-psO_jki_seq5_rarefied_rare.meta.rot_mic <- subset(psO_jki_seq5_rarefied_rare.meta, select = -c(Sample_name, Location, Rotation, Stage, Microhabitat, Depth, Replicate, Rot_Stage, Rot_Stage_Mic))
+psO_jki_seq5_rarefied_rare.meta.rot_mic <- subset(psO_jki_seq5_rarefied_rare.meta, select = -c(Sample_name, Location, Stage, Rot_Mic, Microhabitat, Depth, Replicate, Rot_Stage, Rot_Stage_Mic))
 head(psO_jki_seq5_rarefied_rare.meta.rot_mic)
 
 #Create and transpose matrix to make x axis for samples
@@ -61,19 +61,17 @@ qqnorm(ASVs_rarefied_ed$sp1)
 
 #Define colours
 colour = rep(NA, length=length(ASVs_rarefied_ed[,1]))
-colour[which(ASVs_rarefied_ed$Rot_Mic=="W1_RA")] = "#004d26"
-colour[which(ASVs_rarefied_ed$Rot_Mic=="W1_RH")] = "#00b33c"
-colour[which(ASVs_rarefied_ed$Rot_Mic=="W2_RA")] = "#b22222"
-colour[which(ASVs_rarefied_ed$Rot_Mic=="W2_RH")] = "#f4837c"
+colour[which(ASVs_rarefied_ed$Rotation=="W1")] = "#d7d3a9"
+colour[which(ASVs_rarefied_ed$Rotation=="W2")] = "#74a553"
 dim(ASVs_rarefied_ed)
 
 #plot
 tiff("~/Documents/R_analysis/jki_seq5/output_jki_seq5/Alpha_div_jki_seq5/rarecurve_jki_seq5_rarefied.tiff", units="cm", width=12, height=12, res=300)
-rarecurve(ASVs_rarefied_ed [,2:15862], step=1000, label=FALSE, col=colour, main="", xlab = "Number of sequences", ylab = "ASVs")
-legend(legend=c("W1_RA", "W1_RH", "W2_RA", "W2_RH"),
+rarecurve(ASVs_rarefied_ed [,2:15863], step=1000, label=FALSE, col=colour, main="", xlab = "Number of sequences", ylab = "ASVs")
+legend(legend=c("W1", "W2"),
        "bottomright", 
        bty="n",
-       col=c("#004d26", "#00b33c", "#b22222", "#f4837c"),
+       col=c("#d7d3a9", "#74a553"),
        pch=15,
        pt.cex=1.5,
        cex=0.75,

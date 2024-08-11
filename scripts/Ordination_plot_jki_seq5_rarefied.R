@@ -1,4 +1,6 @@
 ##Creating MDS plot for selected dataset
+#https://github.com/mplewis/csvtomd
+
 #load package
 library("phyloseq")
 library("vegan")
@@ -12,7 +14,7 @@ library("ggpubr")
 set.seed(2022)
 
 # Set color palette
-Rotation_colors <- c("W1" = "#d7d3a9",  "W2" = "#74a553")
+Rotation_colors <- c("W1" = "#008040",  "W2" =  "#ee4035")
 
 ### All samples ----> MDS
 MDS_bray_psO_jki_seq5_rarefied_sqr<-ordinate(psO_jki_seq5_rarefied, "MDS","bray", autotransform=TRUE)
@@ -24,45 +26,75 @@ head(MDS_bray_psO_jki_seq5_rarefied_sqr)
 head(MDS_bray_psO_jki_seq5_rarefied_T1_filt_sqr)
 head(MDS_bray_psO_jki_seq5_rarefied_T2_filt_sqr)
 
+#### All this to select the dots to be the margen for the filling!
+# Create a data frame from the ordination results
+ordination_df_MDS_bray_psO_jki_seq5_rarefied_sqr <- as.data.frame(MDS_bray_psO_jki_seq5_rarefied_sqr$vectors)
+
+# Add metadata to the ordination data frame
+ordination_df_MDS_bray_psO_jki_seq5_rarefied_sqr <- ordination_df %>%
+  mutate(Depth = sample_data(psO_jki_seq5_rarefied)$Depth,
+         Rotation = sample_data(psO_jki_seq5_rarefied)$Rotation)
+
+# Function to get convex hull for each group
+get_hull <- function(df) {
+  df[chull(df$Axis.1, df$Axis.2), ]
+}
+
+# Get convex hulls for each Depth and Rotation combination
+hull_data <- ordination_df_MDS_bray_psO_jki_seq5_rarefied_sqr %>%
+  group_by(Depth, Rotation) %>%
+  do(get_hull(.))
+
+
 #Create a MDS plot 
-plot_MDS_bray_psO_jki_seq5_rarefied_sqr<-plot_ordination(psO_jki_seq5_rarefied, MDS_bray_psO_jki_seq5_rarefied_sqr, type="sample",color="Rotation", shape = "Depth") + 
-  geom_point(size=3) +
+plot_MDS_bray_psO_jki_seq5_rarefied_sqr <- ggplot(ordination_df_MDS_bray_psO_jki_seq5_rarefied_sqr, aes(x = Axis.1, y = Axis.2, color = Rotation, shape = Depth)) + 
+  geom_point(size = 5) +
+  #geom_polygon(data = hull_data, aes(fill = Rotation, group = interaction(Depth, Rotation)), alpha = 0.3) +  # Fill the area with color for each group
+  #geom_path(data = hull_data, aes(group = interaction(Depth, Rotation)), size = 1, color = "black") +  # Connect the outer points with lines
   theme_bw() +
-  theme(axis.text = element_text(size=18)) +
-  theme(axis.title = element_text(size=20)) +
-  theme(legend.title = element_text(size=20)) +
-  theme(legend.text = element_text(size=20)) +
-  scale_color_manual(values = c(Rotation_colors <- c("#d7d3a9", "#74a553")))
-plot_MDS_bray_psO_jki_seq5_rarefied_sqr 
+  theme(axis.text = element_text(size = 18),
+        axis.title = element_text(size = 20),
+        legend.title = element_text(size = 20),
+        legend.text = element_text(size = 20)) +
+  scale_color_manual(values = c("#008040", "#ee4035")) +
+  scale_fill_manual(values = c("#008040", "#ee4035"))
+plot_MDS_bray_psO_jki_seq5_rarefied_sqr
 
 ggsave("plot_MDS_bray_psO_jki_seq5_rarefied_sqr.png", path = "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Ordination_jki_seq5/", width = 16, height = 12, units = "cm", dpi = 300, device = "png")
 
 #Create a MDS plot 
 plot_MDS_bray_psO_jki_seq5_rarefied_T1_filt_sqr<-plot_ordination(psO_jki_seq5_rarefied_T1_filt, MDS_bray_psO_jki_seq5_rarefied_T1_filt_sqr, type="sample",color="Rotation", shape = "Depth") + 
-  geom_point(size=3) +
+  geom_point(size=5) +
   theme_bw() +
   theme(axis.text = element_text(size=18)) +
   theme(axis.title = element_text(size=20)) +
   theme(legend.title = element_text(size=20)) +
   theme(legend.text = element_text(size=20)) +
-  scale_color_manual(values = c(Rotation_colors <- c("#d7d3a9", "#74a553")))
+  scale_color_manual(values = c(Rotation_colors <- c("#008040", "#ee4035")))
 plot_MDS_bray_psO_jki_seq5_rarefied_T1_filt_sqr 
+
+plot_MDS_bray_psO_jki_seq5_rarefied_T1_filt_sqr +
+  scale_shape_discrete(labels = c("0-30", "30-60")) 
 
 ggsave("plot_MDS_bray_psO_jki_seq5_rarefied_T1_filt_sqr.png", path = "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Ordination_jki_seq5/", width = 16, height = 12, units = "cm", dpi = 300, device = "png")
 
 
 #Create a MDS plot 
 plot_MDS_bray_psO_jki_seq5_rarefied_T2_filt_sqr<-plot_ordination(psO_jki_seq5_rarefied_T2_filt, MDS_bray_psO_jki_seq5_rarefied_T2_filt_sqr, type="sample",color="Rotation", shape = "Depth") + 
-  geom_point(size=3) +
+  geom_point(size=5) +
   theme_bw() +
   theme(axis.text = element_text(size=18)) +
   theme(axis.title = element_text(size=20)) +
   theme(legend.title = element_text(size=20)) +
   theme(legend.text = element_text(size=20)) +
-  scale_color_manual(values = c(Depth_colors <- c("#d7d3a9", "#74a553")))
+  scale_color_manual(values = c(Depth_colors <- c("#008040", "#ee4035")))
 plot_MDS_bray_psO_jki_seq5_rarefied_T2_filt_sqr 
 
+plot_MDS_bray_psO_jki_seq5_rarefied_T2_filt_sqr +
+  scale_shape_discrete(labels = c("0-30", "30-60")) 
+
 ggsave("plot_MDS_bray_psO_jki_seq5_rarefied_T2_filt_sqr.png", path = "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Ordination_jki_seq5/", width = 16, height = 12, units = "cm", dpi = 300, device = "png")
+
 
 
 
@@ -182,3 +214,4 @@ print(p_pairwise_anosim_bray_Rot_Stage_Mic_psO_jki_seq5_rarefied_T2)
 print(p_table_pairwise_anosim_bray_Rot_Stage_Mic_psO_jki_seq5_rarefied_T2)
 
 #### The end! Have fun!!
+

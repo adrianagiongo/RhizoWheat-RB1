@@ -2,7 +2,6 @@
 
 #load libraries
 library("phyloseq")
-library("ggplot2")
 library("readxl")
 library("dplyr")
 
