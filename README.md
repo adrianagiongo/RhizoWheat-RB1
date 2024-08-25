@@ -1,13 +1,13 @@
-### Github repository for 
-# Negative plant-soil feedback of successive winter wheat rotations is associated with bacterial and archaeal community composition changes
-### Nikolaos Kaloterakis, Andrea Braun-Kiewnick, Adriana Giongo, Mehdi Rashtbari, Priscilla Zamberlan, Bahar S. Razavi, Kornelia Smalla, Rüdiger Reichel, Nicolas Brüggemann
+### Github repository for
+# The rotational position of winter wheat shapes the bacterial and archaeal community, contributing to a negative plant-soil feedback and yield decline
+### Nikolaos Kaloterakis, Adriana Giongo, Andrea Braun-Kiewnick, Mehdi Rashtbari, Priscilla Zamberlan, Bahar S. Razavi, Kornelia Smalla, Rüdiger Reichel, Nicolas Brüggemann
 
 ### How to cite this work
 DOI: 
 
 ### Data
 Unassembled raw amplicon data were deposited in the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject 
-[PRJNAxxx](https://www.ncbi.nlm.nih.gov/bioproject/PRJNAxxx/)
+[PRJNA942109](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA942109/)
 
 ### Supplementary Material
 The Supplementary Material for this article can be found online at: \
@@ -23,4 +23,4 @@ https://www.rhizowheat.uni-kiel.de/de \
 https://www.julius-kuehn.de/en/ep
 
 ### Submission
-Submitted to [xx](https://xx) on xx.xx.2024. 
+Submitted to [Soil Biology and Biochemistry](https://www.sciencedirect.com/journal/soil-biology-and-biochemistry) on xx.xx.2024. 
