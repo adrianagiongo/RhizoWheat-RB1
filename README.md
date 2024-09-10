@@ -23,4 +23,4 @@ https://www.rhizowheat.uni-kiel.de/de \
 https://www.julius-kuehn.de/en/ep
 
 ### Submission
-Submitted to [Soil Biology and Biochemistry](https://www.sciencedirect.com/journal/soil-biology-and-biochemistry) on xx.xx.2024. 
+Submitted to [Soil Biology and Biochemistry](https://www.sciencedirect.com/journal/soil-biology-and-biochemistry) on 09.09.2024. 
