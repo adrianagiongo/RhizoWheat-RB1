@@ -26,3 +26,7 @@ https://www.julius-kuehn.de/en/ep
 Submitted to WolV System (JKI) on 10.09.2024.\
 Submitted to [Soil Biology and Biochemistry](https://www.sciencedirect.com/journal/soil-biology-and-biochemistry) on 09.09.2024. 
 Back...
+
+### Useful tools / tips
+https://csvtomd.com/#/ \
+https://nalinan.medium.com/how-to-vectorize-plots-from-r-in-powerpoint-bad7c238e86a
