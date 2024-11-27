@@ -27,6 +27,22 @@ Submitted to WolV System (JKI) on 10.09.2024.\
 Submitted to [Soil Biology and Biochemistry](https://www.sciencedirect.com/journal/soil-biology-and-biochemistry) on 09.09.2024. 
 Back...
 
+### Submission
+0) Submitted to WolV System (JKI) on 10.09.2024.
+1) Submitted to [Soil Biology and Biochemistry](https://www.sciencedirect.com/journal/soil-biology-and-biochemistry) on 09.09.2024. 
+
+2) Reviewers comments on 24.11.2024 (deadline 02.12.2024)
+- First round to co-authors: 26.11.2024
+
+3) Re-submission to [Soil Biology and Biochemistry](https://www.sciencedirect.com/journal/soil-biology-and-biochemistry) on Dec 2024. 
+
+4) Accepted at [Soil Biology and Biochemistry](https://www.sciencedirect.com/journal/soil-biology-and-biochemistry) on Dec 2024.
+
+5) Online version at
+
+
+
+
 ### Useful tools / tips
 https://csvtomd.com/#/ \
 https://nalinan.medium.com/how-to-vectorize-plots-from-r-in-powerpoint-bad7c238e86a
