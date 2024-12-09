@@ -233,3 +233,6 @@ Callahan B, McMurdie P, Rosen M et al. (2016) DADA2: High-resolution sample infe
 
 Schloss PD (2024) Rarefaction is currently the best approach to control for uneven sequencing effort in amplicon sequence analyses. mSphere 9:e00354-23. [DOI](http://10.1128/msphere.00354-23)
 
+### Useful tools / tips
+https://csvtomd.com/#/ \
+https://nalinan.medium.com/how-to-vectorize-plots-from-r-in-powerpoint-bad7c238e86a
