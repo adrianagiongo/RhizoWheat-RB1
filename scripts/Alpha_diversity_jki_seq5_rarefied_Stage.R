@@ -5,6 +5,7 @@ library("vegan")
 library("microbiome")
 library("ggpubr")
 library("ggplot2")
+library("svglite")
 
 ### T1 and T2
 ##Calculates the alpha diversity of microbial communities
@@ -69,6 +70,8 @@ plot_psO_jki_seq5_rarefied_T1_filt_shannon_rot
 
 ggsave("plot_psO_jki_seq5_rarefied_T1_filt_shannon_rot.png", path = "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Alpha_div_jki_seq5/", width = 16, height = 12, units = "cm",dpi = 300)
 
+ggsave("plot_psO_jki_seq5_rarefied_T1_filt_shannon_rot.svg", plot_psO_jki_seq5_rarefied_T1_filt_shannon_rot, device = "svg", path = "~/Documents/R_analysis/jki_seq5/output_jki_seq5/Alpha_div_jki_seq5/")
+       
 #Plots CHAO1
 plot_psO_jki_seq5_rarefied_T1_filt_chao1_rot <- ggboxplot(psO_jki_seq5_rarefied_T1_filt.meta, "Depth", "chao1", fill = "Rotation", color = "Rotation", palette = c("#008040", "#ee4035"), ylab = "Chao1 index", alpha = 0.8) +
   theme_bw() + 
